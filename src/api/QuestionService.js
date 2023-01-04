@@ -1,9 +1,9 @@
-// import axios from "axios"
 
-// class QuestionService{
-//     executeQuestionService(){
-//         axios.get('http://localhost:9096/get');
-//     }
-// }
+class QuestionService{
+    executeQuestionService(test){
+        return fetch(`http://localhost:8084/Questions/get/${test}`);
+        // return axios.get(`http://localhost:8084/Questions/get/${test}`); 
+    }
+}
 
-// export default new QuestionService()
+export default new QuestionService()

@@ -17,16 +17,16 @@ function App() {
         <div className={classes.App} >
 
             <BrowserRouter>
-                <Header />
+                <Header/>
                 <Routes>
                     <Route path="/" element={<LoginComponentWithNavigation />} />
                     <Route path="/login" element={<LoginComponentWithNavigation />} />
                     <Route path="/home" element={<AuthenticatedRoute><Home /></AuthenticatedRoute>} />
-                    <Route path="/test1" element={<AuthenticatedRoute><Test1 /></AuthenticatedRoute>} />
-                    <Route path="/test2" element={<AuthenticatedRoute><Test2 /></AuthenticatedRoute>} />
+                    <Route path="/test1" element={<AuthenticatedRoute><Test1/></AuthenticatedRoute>} />
+                    <Route path="/test2" element={<AuthenticatedRoute><Test2/></AuthenticatedRoute>} />
                     <Route path="/logout" element={<LoginComponentWithNavigation />} />
                 </Routes>
-                <Footer />
+                <Footer/>
             </BrowserRouter>
         </div>
     );
